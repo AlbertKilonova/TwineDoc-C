@@ -1,0 +1,61 @@
+/**
+ * 波波专属：Material Design 清爽森林色系 (浅蓝 + 浅绿)
+ * -------------------------------------------------------------------------- */
+
+:root {
+  /* 品牌色定义 - 使用 Material Design Blue 500/600 系列 */
+  --vp-c-brand-1: #2196f3; /* 主色：明亮的蓝 */
+  --vp-c-brand-2: #1e88e5; /* 悬停色：略深的蓝 */
+  --vp-c-brand-3: #1976d2; /* 激活色：深蓝 */
+  --vp-c-brand-soft: rgba(33, 150, 243, 0.14);
+
+  /* 提示色定义 - 使用 Material Design Green 500 系列 */
+  --vp-c-tip-1: #4caf50; /* 成功/提示：清新的绿 */
+  --vp-c-tip-2: #43a047;
+  --vp-c-tip-3: #388e3c;
+  --vp-c-tip-soft: rgba(76, 175, 80, 0.14);
+
+  /* 警告与危险色也微调为 MD 风格 */
+  --vp-c-warning-1: #ff9800; /* 亮橙 */
+  --vp-c-danger-1: #f44336;  /* 亮红 */
+
+  /* 背景色微调：让白色背景带一点点极淡的蓝灰色，更有质感 */
+  --vp-c-bg: #ffffff;
+  --vp-c-bg-alt: #f5f7f9; /* 侧边栏带一点冷色调 */
+  --vp-c-bg-elv: #ffffff;
+  --vp-c-bg-soft: #f1f3f4;
+}
+
+.dark {
+  /* 暗黑模式下的品牌色 - 使用更柔和的 MD Blue 200 系列 */
+  --vp-c-brand-1: #90caf9;
+  --vp-c-brand-2: #64b5f6;
+  --vp-c-brand-3: #42a5f5;
+  --vp-c-brand-soft: rgba(144, 202, 249, 0.16);
+
+  /* 暗黑模式下的提示色 - 使用柔和的 MD Green 200 系列 */
+  --vp-c-tip-1: #a5d6a7;
+  --vp-c-tip-2: #81c784;
+  --vp-c-tip-3: #66bb6a;
+  --vp-c-tip-soft: rgba(165, 214, 167, 0.16);
+
+  /* 暗黑模式背景：深邃的蓝黑色 */
+  --vp-c-bg: #1a1c1e;
+  --vp-c-bg-alt: #111315;
+  --vp-c-bg-elv: #212327;
+  --vp-c-bg-soft: #212327;
+}
+
+/* 顺便帮波把搜索框也调教一下，让它更有 MD 的悬浮感 */
+.DocSearch-Button {
+  border-radius: 28px !important; /* MD3 风格的大圆角 */
+  background-color: var(--vp-c-bg-alt) !important;
+  border: 1px solid transparent !important;
+  transition: all 0.2s ease;
+}
+
+.DocSearch-Button:hover {
+  background-color: var(--vp-c-bg) !important;
+  border-color: var(--vp-c-brand-1) !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
