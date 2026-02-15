@@ -8,7 +8,7 @@ hero:
   actions:
     - theme: brand
       text: 快速入门指南[Twine2]
-      link: /5-Guide/
+      link: /Guide/
     - theme: alt
       text: 贡献者名单
       link: /contributors

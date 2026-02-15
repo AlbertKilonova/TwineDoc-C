@@ -7,16 +7,20 @@ export default defineConfig({
   titleTemplate: ':title | Twine Doc',
   description: 'Twine documentation from the Chinese community',
   cleanUrls: true,
+  rewrites: {
+    // 这行正则的意思是：匹配 开头是数字和横杠 的路径，并把数字横杠删掉
+    ':p(\\d+-):name(.+)': ':name'
+  },
   markdown: {
     lineNumbers: true
   },
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: 'Harlowe', link: '/1-Harlowe' },
-      { text: 'SugarCube', link: '/2-SugarCube' },
-      { text: 'Snowman', link: '/3-Snowman' },
-      { text: 'Chapbook', link: '/4-Chapbook' }
+      { text: 'Harlowe', link: '/Harlowe' },
+      { text: 'SugarCube', link: '/SugarCube' },
+      { text: 'Snowman', link: '/Snowman' },
+      { text: 'Chapbook', link: '/Chapbook' }
     ],
 
     sidebar: generateSidebar({
@@ -31,7 +35,7 @@ export default defineConfig({
     }),
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/AlbertKilonova/TwineDoc-C' }
     ]
   }
 })
