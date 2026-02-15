@@ -1,0 +1,32 @@
+# 依赖包
+node_modules/
+package-lock.json
+
+# 构建产物
+docs/.vitepress/dist
+docs/.vitepress/.temp
+docs/.vitepress/.cache
+
+# 开发缓存（你已加上）
+docs/.vitepress/cache/
+
+# 环境变量文件
+.env
+.env.local
+.env.*.local
+
+# 日志
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# macOS
+.DS_Store
+
+# IDE 配置
+.vscode/
+.idea/
+
+# 编辑器临时文件
+*.swp
+*.*~
