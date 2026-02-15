@@ -23,7 +23,7 @@
 #### 2. 获取源码
 克隆本仓库至本地目录：
 ```bash
-git clone [https://github.com/AlbertKilonova/TwineDoc-C.git](https://github.com/AlbertKilonova/TwineDoc-C.git)
+git clone https://github.com/AlbertKilonova/TwineDoc-C.git
 cd TwineDoc-C
 ```
 
