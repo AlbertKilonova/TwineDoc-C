@@ -1,0 +1,28 @@
+/* 让代码块变成阿波的糖果色 */
+
+/* 宏粉色 */
+.shiki.sugarcube .keyword.control.sugarcube {
+  color: #F48FB1 !important;
+  font-weight: bold;
+}
+
+/* 变量黄色 */
+.shiki.sugarcube .variable.other.story.sugarcube {
+  color: #FFE082 !important;
+}
+
+/* 临时变量橙色 */
+.shiki.sugarcube .variable.other.temp.sugarcube {
+  color: #FFAB91 !important;
+}
+
+/* 链接蓝色 */
+.shiki.sugarcube .constant.other.link.sugarcube {
+  color: #81D4FA !important;
+  font-weight: bold;
+}
+
+/* 字符串绿色 */
+.shiki.sugarcube .string.quoted.sugarcube {
+  color: #A5D6A7 !important;
+}

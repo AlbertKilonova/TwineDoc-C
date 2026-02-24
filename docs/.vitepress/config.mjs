@@ -4,26 +4,16 @@ import { generateSidebar } from 'vitepress-sidebar'
 const fixSidebar = (items, prefix) => {
   return items.map(item => {
     const newItem = { ...item }
-    
-    // 如果有 link，不管是文件的还是文件夹关联的 index，都得修路径
     if (newItem.link) {
-      // 1. 先把讨厌的数字和 .md 后缀处理掉（VitePress 链接通常不带后缀）
       let cleanPath = newItem.link.replace(/(\d+-)/g, '').replace(/\.md$/, '')
-      
-      // 2. 如果链接最后是 index，在 VitePress 里它通常代表目录本身，咱们处理一下
       if (cleanPath.endsWith('/index')) {
         cleanPath = cleanPath.replace(/\/index$/, '/')
       }
-      
-      // 3. 焊上正确的引擎前缀
       newItem.link = `/${prefix}/${cleanPath}`.replace(/\/+/g, '/')
     }
-    
-    // 如果有子项目，递归处理
     if (newItem.items && newItem.items.length > 0) {
       newItem.items = fixSidebar(newItem.items, prefix)
     }
-    
     return newItem
   })
 }
@@ -42,11 +32,17 @@ export default defineConfig({
   title: 'Twine Doc-C',
   cleanUrls: true,
   
+  head: [
+    ['link', { rel: 'icon', href: '/logos/logo.svg' }] 
+  ],
+  
   rewrites: (id) => {
     return id.replace(/(\d+-)/g, '');
   },
 
   themeConfig: {
+    logo: '/logos/logo.svg',
+    
     search: {
       provider: 'local',
       options: {

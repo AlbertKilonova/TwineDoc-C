@@ -1,7 +1,9 @@
 {
   "scripts": {
     "docs:dev": "vitepress dev docs",
+    "url:dev": "vitepress dev url-tools",
     "docs:build": "vitepress build docs",
+    "url:build": "vitepress build url-tools",
     "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
