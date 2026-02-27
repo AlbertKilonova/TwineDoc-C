@@ -1,0 +1,46 @@
+/* giscus 森林蓝绿自定义主题 */
+
+main {
+  /* 基础背景与文字颜色，适配 vars.css */
+  --color-canvas-default: transparent;
+  --color-canvas-next: var(--vp-c-bg-soft);
+  --color-accent-fg: #2196f3; /* 波的品牌蓝 */
+  --color-accent-emphasis: #2196f3;
+  --color-fg-default: #2c3e50;
+  --color-fg-muted: #4e5969;
+  --color-border-default: var(--vp-c-divider);
+  --color-border-muted: var(--vp-c-divider-light);
+  --color-btn-bg: #f5f7f9;
+  --color-btn-hover-bg: #e5e7eb;
+}
+
+/* 当 VitePress 处于深色模式时（giscus 会继承外层的 .dark 类） */
+.dark main {
+  --color-accent-fg: #90caf9; /* 暗黑模式下的品牌蓝 */
+  --color-accent-emphasis: #2196f3;
+  --color-fg-default: #e1e1e1;
+  --color-fg-muted: #8b949e;
+  --color-canvas-default: transparent;
+  --color-btn-bg: #212327;
+  --color-btn-hover-bg: #2c2e33;
+}
+
+/* 按钮圆角微调，配合搜索框 MD3 风格 */
+.btn, .form-control {
+  border-radius: 12px !important;
+}
+
+/* 让评论框的输入区域更有呼吸感 */
+.giscus-footer {
+  margin-top: 16px;
+}
+
+/* 反应按钮（reactions）的样式优化 */
+.gcl-reaction-button {
+  border-radius: 8px !important;
+  transition: all 0.2s ease;
+}
+
+.gcl-reaction-button:hover {
+  background-color: var(--vp-c-brand-soft) !important;
+}
