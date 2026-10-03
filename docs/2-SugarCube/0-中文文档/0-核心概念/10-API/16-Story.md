@@ -116,7 +116,7 @@ if (Story.delete("The Ducky")) {
 
 ---
 
-### Story.filter(predicate [, thisArg]) → Array<Passage>
+### Story.filter(predicate [, thisArg]) → `Array<Passage>`
 在所有 `Passage` 实例中搜索那些通过给定谓词函数所实现测试的实例。
 
 > **注意**：此方法无法检索带有代码标签的段落。
@@ -262,7 +262,7 @@ if (Story.has("The Ducky")) {
 
 ---
 
-### Story.lookup(propertyName , searchValue [, sortProperty]) → Array<Passage>
+### Story.lookup(propertyName , searchValue [, sortProperty]) → `Array<Passage>`
 
 > **已废弃**：此静态方法已被废弃，不应再使用。请参阅 Story.filter() 静态方法作为其替代。
 
@@ -273,7 +273,7 @@ if (Story.has("The Ducky")) {
 
 ---
 
-### Story.lookupWith(predicate [, sortProperty]) → Array<Passage>
+### Story.lookupWith(predicate [, sortProperty]) → `Array<Passage>`
 
 > **已废弃**：此静态方法已被废弃，不应再使用。请参阅 Story.filter() 静态方法作为其替代。
 

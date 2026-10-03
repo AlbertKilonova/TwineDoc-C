@@ -11,6 +11,7 @@ import { startLoading, stopLoading } from './loading'
 // 把正文按标题分组:每个标题 + 其后内容(直到下一个标题)作为一块
 // 递归展开包裹容器(div),直到找到标题,避免「h1 + 一个大 div」只被当成 1 组
 function groupBlocks() {
+  if (typeof document === 'undefined') return []
   const doc = document.querySelector('.vp-doc')
   if (!doc) return []
 

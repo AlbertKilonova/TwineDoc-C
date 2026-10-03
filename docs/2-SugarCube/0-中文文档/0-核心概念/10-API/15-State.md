@@ -357,7 +357,7 @@ State.metadata.delete('achievements');
 
 ---
 
-### State.metadata.entries() → Array<Array<string, any>>
+### State.metadata.entries() → `Array<Array<string, any>>`
 以 `[key, value]` 数组的形式返回故事元数据存储的键/值对数组。
 
 **历史：**
@@ -423,7 +423,7 @@ if (State.metadata.has('achievements')) {
 
 ---
 
-### State.metadata.keys() → Array<string>
+### State.metadata.keys() → `Array<string>`
 返回故事元数据存储的键数组。
 
 **历史：**
