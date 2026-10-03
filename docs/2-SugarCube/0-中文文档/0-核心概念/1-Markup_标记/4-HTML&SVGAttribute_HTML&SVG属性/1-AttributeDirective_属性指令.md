@@ -25,10 +25,10 @@ description: HTML 与 SVG 属性的特殊指令前缀
 
 | 指令语法 | 语法示例 | 渲染后的 HTML |
 | --- | --- | --- |
-| **标准前缀** | `<span sc-eval:id="_id"></span>` | `<span id="foo"></span>` |
-| **表达式拼接** | `<span sc-eval:id="'pre-' + _id + '-suf'"></span>` | `<span id="pre-foo-suf"></span>` |
-| **简写前缀 (@)** | `<span @id="_id"></span>` | `<span id="foo"></span>` |
-| **复合表达式** | `<span @id="'pre-' + _id + '-suf'"></span>` | `<span id="pre-foo-suf"></span>` |
+| **标准前缀** | `` | `` |
+| **表达式拼接** | `` | `` |
+| **简写前缀 (@)** | `` | `` |
+| **复合表达式** | `` | `` |
 
 ### 应用场景示例
 

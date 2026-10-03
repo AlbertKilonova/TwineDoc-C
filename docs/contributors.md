@@ -59,6 +59,12 @@ onMounted(async () => {
     <VPTeamMembers :members="members" />
   </div>
 
+  <!-- 特别鸣谢 -->
+  <div class="special-thanks">
+    <h2>特别鸣谢</h2>
+    <p>感谢 <strong>DeepSeek</strong> AI 小助手，帮忙完成了 SugarCube 章节的中文翻译、格式统一与语法高亮～</p>
+  </div>
+
   <!-- 页脚提示 -->
   <div class="footer-note">
     <p>想出现在这里吗？欢迎前往 GitHub 提交 Pull Request！</p>
@@ -136,9 +142,22 @@ onMounted(async () => {
   transform: scale(1.05) translateY(-5px);
 }
 
+/* 特别鸣谢样式 */
+.special-thanks {
+  margin-top: 50px;
+}
+.special-thanks h2 {
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: var(--vp-c-brand-1);
+}
+.special-thanks p {
+  color: var(--vp-c-text-2);
+}
+
 /* 页脚样式 */
 .footer-note {
-  margin-top: 60px;
+  margin-top: 40px;
   font-size: 0.95rem;
   color: var(--vp-c-text-3);
   font-style: italic;

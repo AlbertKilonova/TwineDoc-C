@@ -26,3 +26,41 @@
 .shiki.sugarcube .string.quoted.sugarcube {
   color: #A5D6A7 !important;
 }
+
+/* 图标字体网格排布 */
+#icon-font-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(88px, 1fr));
+  gap: 10px;
+  margin: 16px 0;
+}
+#icon-font-view > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px 6px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  background: var(--vp-c-bg-soft);
+  transition: border-color .2s, transform .2s;
+}
+#icon-font-view > div:hover {
+  border-color: var(--vp-c-brand);
+  transform: translateY(-2px);
+}
+#icon-font-view span {
+  font-family: sc-icons;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.6em;
+  line-height: 1;
+  speak: never;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+#icon-font-view code {
+  font-size: 0.72em;
+  color: var(--vp-c-text-2);
+}
